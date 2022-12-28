@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <style>
+*{
+    font-family: sans-serif;
+}
+body{
+    margin-top:0;
+    margin-left:0;
+}
+
+@media only screen and (max-width:640px){
+    .nav-bar{
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        position:fixed;
+        display: flex;
+        flex-direction:column;
+    }
+    .nav-leftside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .nav-rightside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* start- ar aris nav-is style */
+.nav-bar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color:aliceblue;
+
+}
+
+.nav-bothside{
+    display: inherit;
+    gap:3em;
+}
+
+.nav-leftside{
+    justify-content: flex-end;
+    align-items: center;
+    width: 500px;
+}
+
+.nav-rightside{
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+}
+.nav-a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.nav-a:hover{
+    color: #555;
+    text-decoration: underline;
+}
+        /* start- dropdown-is style */
+.nav-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: lightcoral;
+    padding: 20px;
+    margin:10px 0 0 -20px;
+    line-height: 30px;
+}      
+.nav-d2:hover .nav-dropdown-content{
+    display: flex;
+    flex-direction: column;
+  }
+.nav-d4:hover .nav-dropdown-content{
+    display: flex;
+    flex-direction: column;
+  }
+.dropdown-a{
+    text-decoration: none;
+    color: #000;
+}
+.dropdown-a:hover{
+    color: #555;
+    text-decoration: underline;
+}
+        /* end- dropdown-is style */
+
+.authorisation-a{
+    color: black;
+    padding: 10px;
+}
+.authorisation-a:hover{
+    color: #555;
+    text-decoration: none;
+}
+
+.free-trial-a{
+    color: #000;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+}
+.free-trial-a:hover{
+    color: #555;
+    text-decoration: none;
+}
+/* end- ar aris nav-is style */
+
+
+
+
+
+
+
+
+
+
+
+/* start- ar aris main-is style */
+.space{
+    width: 100%;
+    height: 70px;
+}
+.section-0{
+    display: flex;
+    justify-content: center;
+}
+.section-a{
+    height: 700px;
+    background-image: url(https://htmlcolorcodes.com/assets/images/colors/light-gray-color-solid-background-1920x1080.png);
+    background-size: cover;
+    background-repeat: none;
+}
+.section-b{
+    height: 700px;
+    background-image: url(https://colors.artyclick.com/color-names-dictionary/colors/D1FFBD/color_D1FFBD.png);
+    background-size: cover;
+    background-repeat: none;
+}
+
+/* end- ar aris main-is style */
+
+
+
+
+
+
+
+
+/* start- ar aris footer-is style */
+.div-footer-container{
+    width: 100%;
+    height: 200px;
+    display: flex;    
+    flex-direction: row;
+    background-color: lightgray;
+
+    justify-content: space-evenly;
+}
+.footer-1{
+    margin-top: 20px;
+    display:inherit;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-2{
+    margin-top: 20px;
+    display:inherit;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.span-footer{
+    color: #000;
+}
+.span-footer:hover{
+
+    color: black;
+    text-decoration: none;
+}
+
+/* end- ar aris footer-is style */
+
+    </style>
+    <link rel="icon" href="https://www.pngplay.com/wp-content/uploads/5/Alphabet-F-Transparent-Free-PNG.png">
+</head>
+<body>
+<!-- start- am section-shi aris saitis navigacia-->
+    <header>
+
+        <nav class="nav-bar">
+            <!--rata menu-s hqondes dropdown funqcia viyeneb div-ebss da ara, ul list-s -->
+            <div class="nav-bothside nav-leftside">
+                <div class="nav-d0 nav-d1"><a class="nav-a" href="error.html">F-Shop</a></div>
+                <div class="nav-d0 nav-d2"><a class="nav-a" href="error.html">Solutions</a>
+                    <div class="nav-dropdown-content">
+                        <a class="dropdown-a" href="error.html">Tricks to kick off business</a>                        
+                        <a class="dropdown-a" href="error.html">Sales</a>                        
+                        <a class="dropdown-a" href="error.html">Marketing</a>
+                        <a class="dropdown-a" href="error.html">Management</a>
+                    </div>
+                </div>
+                <div class="nav-d0 nav-d3"><a class="nav-a" href="error.html">Price</a></div>
+                <div class="nav-d0 nav-d4"><a class="nav-a" href="error.html">Resources</a>
+                    <div class="nav-dropdown-content">
+                        <a class="dropdown-a" href="error.html">Help</a>                        
+                        <a class="dropdown-a" href="error.html">Popular topics</a>                        
+                        <a class="dropdown-a" href="error.html">Blogs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bothside nav-rightside">
+                <div class="authorisation"><a href="error.html" class="authorisation-a">Log in</a></div>
+                <div class="free-trial"><a href="error.html" class="free-trial-a">Start free trial</a></div>
+            </div>
+        </nav>
+
+    </header>
+    
+<!-- end- am section-shi aris saitis navigacia-->
+
+
+
+
+<!-- start- am section-shi aris gverdis content-->
+    <main>
+        <div class="space"></div>
+        <section class="section-0 section-a section-1">
+        <h2 class="about-us-h">who we are</h2>
+        <p class="about-us-p"></p>
+        </section>
+
+        <section class="section-0 section-b section-2">
+            <h3>what do we offer</h3>
+        </section>
+
+        <section class="section-0 section-a section-3">
+            <h3>what do we offer</h3>
+        </section>
+
+        <section class="section-0 section-b section-4">
+            <h3>what do we offer</h3>
+        </section>
+
+        <section class="section-0 section-a section-5">
+            <h3>what do we offer</h3>
+        </section>
+
+        <section class="section-0 section-b section-6">
+            <h3>what do we offer</h3>
+        </section>
+
+        <section class="section-0 section-a section-7">
+            <h3>Meet people who chose our product</h3>
+            <!-- aq sachiroa video-->
+        </section>
+
+        <section class="section-0 section-b section-8">
+            <h3 class="section-support-h">The help you need,</h3>
+            <h3 class="section-support-h">when you need it</h3>
+        </section>
+    </main>
+<!-- end- am sesection-shi aris gverdis content-->
+
+
+
+
+<!-- start- am section-shi aris gverdis dasasruli da sachiro link-ebi, mat shoris bmulebi socialuri mediaze -->
+    <footer>
+        <div class="div-footer-container">
+        <div class="footer-1"> <div class="div-footer d-f-1"><a href="error.html" class="span-footer">products</a>
+                <div class=""><a class="footer-a" href="error.html"></a></div>
+            </div>
+
+            <div class="div-footer d-f-2"><a href="error.html" class="span-footer">products</a>
+                <div class=""><a class="footer-a" href="error.html"></a></div>
+            </div>
+            
+            <div class="div-footer d-f-3"><a href="error.html" class="span-footer">products</a>
+                <div class=""><a class="footer-a" href="error.html"></a></div>
+            </div>
+        </div>
+         <div class="footer-2"> 
+            <div class="div-footer d-f-4"><a href="error.html" class="span-footer">products</a>
+                <div class=""><a class="footer-a" href="error.html"></a></div>
+            </div>
+
+            <div class="div-footer d-f-5"><a href="error.html" class="span-footer">products</a>
+                <div class=""><a class="footer-a" href="error.html"></a></div>
+            </div>
+
+            <div class="div-footer d-f-6"><a href="error.html" class="span-footer">products</a>
+                <div class=""><a class="footer-a" href="error.html"></a></div>
+            </div>
+             
+            <div class="footer-socials"><a href="error.html" class="span-footer">socials</a>
+                <div class=""><a class="footer-a" href="error.html"></a></div>
+            </div>
+        </div> 
+    
+        
+        </div>
+    </footer>
+<!-- end- am section-shi aris gverdis dasasruli da sachiro link-ebi, mat shoris bmulebi socialuri mediaze -->
+
+</body>
+</html>
